@@ -104,3 +104,251 @@ p{
     background:var(--texto);
     border-radius:10px;
 }
+
+.container-imagens{
+    position: relative;
+    width: 100%;
+}
+ 
+.imagembg{
+    width: 100%;
+    display: block;
+    filter: brightness(0.4);
+}
+ 
+.imagembg2{
+    background-image: url("../assets/imgs/imagembg2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    padding: 50px;
+    position: relative;
+}
+ 
+.bloco-central{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+ 
+.logo2{
+    width: 400px;
+    animation: flutuar 4s ease-in-out infinite;
+    margin-top: -70px;
+}
+ 
+ 
+.texto-superior{
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 200px;
+}
+ 
+.texto-superior span{
+    color: var(--span);
+}
+ 
+.texto-inferior{
+    color: white;
+    margin-top: -120px;
+}
+ 
+.btn-missao{
+    position: relative;
+    z-index: 10;
+    background-color: white;
+    border: 3px solid var(--span);
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px;
+}
+ 
+.btn-missao:hover{
+    background: var(--span);
+    transform: translateY(-4px);
+    box-shadow: 0 0 15px var(--span);
+}
+ 
+ 
+.numh1{
+    font-size: 50px;
+    padding: 10px;
+}
+ 
+.descricaoh2{
+    font-size: 25px;
+    padding: 10px;
+}
+ 
+.descricaop{
+    font-size: 20px;
+    padding: 10px;
+}
+ 
+#cor1{
+    color: var(--span);
+}
+ 
+#cor2{
+    color: var(--corsecao2);
+}
+ 
+#cor3{
+    color: var(--corsecao3);
+}
+ 
+#cor4{
+    color: var(--corsecao4);
+}
+ 
+#cor5{
+    color:var(--corsecao5);
+}
+ 
+#cor6{
+    color:var(--corsecao6);
+}
+ 
+#spancor{
+    color:var(--corsecao3);
+}
+ 
+#spancor2{
+    color:var(--corsecao4);
+}
+ 
+#spancor5{
+    color:var(--corsecao5);
+}
+ 
+#spancor6{
+    color:var(--corsecao6)
+}
+ 
+p{
+    color: rgb(180,180,180);
+}
+ 
+h2,h3{
+    color: white;
+}
+ 
+ 
+.cards-container1{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    padding:20px;
+}
+ 
+.container{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+ 
+.card1{
+    background-color: var(--corsecundaria);
+    border: 3px solid var(--span);
+    border-radius: 10px;
+    padding: 50px;
+    width: 100%;
+    max-width: 350px;
+    text-align:center;
+    transition:0.3s;
+    cursor: pointer;
+}
+ 
+.card1:hover{
+    transform: translateY(-10px);
+    box-shadow:
+    0 0 10px 2px rgba(0,212,255,0.4),
+    0 0 30px 10px rgba(0,212,255,0.7);
+}
+ 
+.card1 h3{
+    color: var(--span);
+    font-weight: 600;
+}
+ 
+ 
+.card3{
+    background-color: var(--corbordaroxa);
+    border: 3px solid var(--corsecao3);
+    border-radius: 10px;
+    padding: 50px;
+    width: 100%;
+    max-width: 350px;
+    text-align:center;
+    transition:0.3s;
+    cursor: pointer;
+}
+ 
+.card3:hover{
+    transform: translateY(-10px);
+    box-shadow:
+    0 0 10px 2px var(--corbordaroxa),
+    0 0 30px 10px var(--corsecao3);
+}
+ 
+.card3 h3{
+    color: var(--corsecao3);
+    font-weight: 600;
+}
+ 
+.card3 h4{
+    color: var(--corsecao3);
+    font-weight: 600;
+    font-size: 30px;
+}
+ 
+.cardgrande3{
+    background-color: var(--corbordaroxa);
+    border: 3px solid var(--corsecao3);
+    border-radius: 10px;
+    padding: 50px;
+    width: 100%;
+    max-width: 730px;
+    text-align:center;
+    transition:0.3s;
+    cursor: pointer;
+}
+ 
+.cardgrande3 h3{
+    color: var(--corsecao3);
+    font-weight: 600;
+}
+ 
+.cardgrande3 h4{
+    color: var(--corsecao3);
+    font-weight: 600;
+    font-size: 30px;
+}
+ 
+.cardgrande3:hover{
+    transform: translateY(-10px);
+    box-shadow:
+    0 0 10px 2px var(--corsecao3),
+    0 0 30px 10px var(--corbordaroxa);
+}
+ 
+ 
