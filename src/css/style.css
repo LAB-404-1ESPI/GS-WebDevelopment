@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap%27');
+ 
+:root{
+    --bg-header: #000000;
+    --texto: #ffffff;
+    --span: #00c8ff;
+    --corsecundaria: #041542;
+    --bg-principal: #010510;
+    --corsecao2: #ff0000;
+    --bgcardred: #420404;
+    --corsecao3:rgb(135, 29, 255);
+    --corsecao4:rgb(33, 175, 28);
+    --corsecao5:rgb(250, 150, 0);
+    --corsecao6:rgb(255, 0, 85);
+    --corsecao8:rgb(0, 238, 255);
+    --corbordavermelha:rgb(99, 13, 41);
+    --corbordaverde:rgb(15, 77, 18);
+    --corbordaroxa:rgb(46, 0, 73);
+    --corbordalaranja:rgb(187, 67, 19);
+    --botaodegrade: linear-gradient(blue,purple);
+}
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body{
+    width: 100%;
+    overflow-x: hidden;
+    background-color: var(--bg-principal);
+    font-family: poppins;
+}
