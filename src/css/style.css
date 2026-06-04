@@ -827,3 +827,155 @@ footer span{
     height:auto;
     z-index:10001;
 }
+
+ 
+#cor8{
+    color: var(--corsecao8);
+}
+ 
+#spancor8{
+    color: var(--corsecao8);
+}
+#quiz-section {
+ 
+  padding: 40px 20px;
+ 
+  text-align: center;
+ 
+}
+ 
+#quiz-box {
+ 
+  max-width: 680px;
+ 
+  margin: 30px auto 0;
+ 
+  background: var(--corsecundaria);
+ 
+  border: 2px solid var(--span);
+ 
+  border-radius: 16px;
+ 
+  padding: 40px 30px;
+ 
+  box-shadow: 0 0 30px rgba(0,200,255,0.1);
+ 
+}
+ 
+#num-pergunta {
+ 
+  color: var(--span);
+ 
+  font-size: 13px;
+ 
+  margin-bottom: 10px;
+ 
+}
+ 
+#texto-pergunta {
+ 
+  color: white;
+ 
+  font-size: 20px;
+ 
+  margin-bottom: 24px;
+ 
+  line-height: 1.5;
+ 
+}
+ 
+#opcoes-quiz {
+ 
+  display: flex;
+ 
+  flex-direction: column;
+ 
+  gap: 12px;
+ 
+  margin-bottom: 20px;
+ 
+}
+ 
+.opcao-btn {
+ 
+  background: rgba(255,255,255,0.05);
+ 
+  border: 2px solid rgba(255,255,255,0.15);
+ 
+  color: white;
+ 
+  padding: 14px 20px;
+ 
+  border-radius: 10px;
+ 
+  cursor: pointer;
+ 
+  font-size: 15px;
+ 
+  font-family: poppins;
+ 
+  transition: 0.3s;
+ 
+  text-align: left;
+ 
+}
+ 
+.opcao-btn:hover:not(:disabled) {
+ 
+  border-color: var(--span);
+ 
+  background: rgba(0,200,255,0.1);
+ 
+}
+ 
+.opcao-btn.correta { background: rgba(0,200,80,0.25);  border-color: #00cc55; color: #00ff88; }
+ 
+.opcao-btn.errada  { background: rgba(255,50,50,0.25); border-color: #ff4444; color: #ff8888; }
+ 
+#feedback-quiz { min-height: 24px; font-size: 16px; margin-bottom: 10px; }
+ 
+#btn-proxima, #btn-reiniciar {
+ 
+  background: transparent;
+ 
+  border: 2px solid var(--span);
+ 
+  color: var(--span);
+ 
+  padding: 12px 28px;
+ 
+  border-radius: 10px;
+ 
+  cursor: pointer;
+ 
+  font-size: 15px;
+ 
+  font-family: poppins;
+ 
+  transition: 0.3s;
+ 
+  margin-top: 10px;
+ 
+}
+ 
+#btn-proxima:hover, #btn-reiniciar:hover {
+ 
+  background: var(--span);
+ 
+  color: black;
+ 
+}
+ 
+#texto-resultado {
+ 
+  color: white;
+ 
+  font-size: 18px;
+ 
+  margin: 20px 0;
+ 
+  line-height: 1.7;
+ 
+}
+ 
+ 
