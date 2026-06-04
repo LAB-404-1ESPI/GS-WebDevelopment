@@ -978,4 +978,120 @@ footer span{
  
 }
  
+    /* BARRAS */
+
+.impacto{
+        width: 90%;
+    }
+
+    .grupo{
+        flex-wrap: wrap;
+    }
+
+    .grupo span:first-child{
+        width: 100%;
+    }
+
+    .barra{
+        width: 100%;
+    }
+
+    /* TEXTO FINAL */
+
+    .texto-final{
+        width: 90%;
+        font-size: 18px;
+    }
+
+    /* FONTE */
+
+    .fonte{
+        margin-left: 0;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    /* FOOTER */
+
+    footer{
+        padding: 20px;
+    }
+
+    footer h3{
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    footer h4,
+    footer h5{
+        font-size: 13px;
+    }
+
+    .menu-item span{
+    font-size:20px;
+    color:var(--span);
+    font-weight:700;
+    letter-spacing:3px;
+    margin-left: -10px;
+    margin-bottom: 60px;
+    }
  
+    .menu-item h2{
+    font-size:15px;
+    font-weight:200;
+    letter-spacing:4px;
+    margin-bottom: 60px;
+    transition:.3s;
+    position: relative;
+    }
+
+
+.cor{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border-color: var(--botaodegrade);
+    margin: 5px;
+    margin-left: 10px;
+}
+
+.botoes{
+    color: white;
+
+}
+body {
+    margin: 0;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 120px;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caption {
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    color: white;
+    font-family: Arial;
+    max-width: 600px;
+    z-index: 1;
+}

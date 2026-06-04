@@ -131,3 +131,5 @@ document.getElementById('btn-reiniciar').addEventListener('click', () => {
 
 
   carregarPergunta();
+
+  
