@@ -132,4 +132,26 @@ document.getElementById('btn-reiniciar').addEventListener('click', () => {
 
   carregarPergunta();
 
-  
+
+function trocar(cor){
+    document.body.style.background = cor;
+}
+document.querySelectorAll(".menu-item").forEach(link => {
+ 
+    link.addEventListener("click", function(e){
+ 
+        e.preventDefault();
+ 
+        const alvo = document.querySelector(
+            this.getAttribute("href")
+        );
+ 
+        window.scrollTo({
+            top: alvo.offsetTop - 100,
+            behavior: "smooth"
+        });
+ 
+        menuOverlay.classList.remove("ativo");
+    });
+ 
+});
