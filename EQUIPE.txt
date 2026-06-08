@@ -6,3 +6,4 @@ Gustavo Ferreira Silva Rm571675
 Matheus Sequeira Franco da Silva Rm571127
  
 Link do repositório GitHub: https://github.com/LAB-404-1ESPI/GS-WebDevelopment
+Link do GitHub Pages: https://lab-404-1espi.github.io/GS-WebDevelopment/
