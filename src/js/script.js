@@ -170,3 +170,39 @@ btnMissao.addEventListener("click", function(event) {
     });
  
 });
+
+
+
+const menuIcone = document.getElementById("menu-icone");
+const menuOverlay = document.getElementById("menuOverlay");
+const fecharMenu = document.getElementById("fecharMenu");
+ 
+menuIcone.addEventListener("click", () => {
+    menuOverlay.classList.add("ativo");
+});
+ 
+fecharMenu.addEventListener("click", () => {
+    menuOverlay.classList.remove("ativo");
+});
+ 
+/* links */
+ 
+document.querySelectorAll(".menu-item").forEach(link => {
+ 
+    link.addEventListener("click", function(e){
+ 
+        e.preventDefault();
+ 
+        const alvo = document.querySelector(
+            this.getAttribute("href")
+        );
+ 
+        window.scrollTo({
+            top: alvo.offsetTop - 100,
+            behavior: "smooth"
+        });
+ 
+        menuOverlay.classList.remove("ativo");
+    });
+ 
+});
