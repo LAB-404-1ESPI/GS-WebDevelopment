@@ -217,3 +217,28 @@ document.querySelectorAll(".menu-item").forEach(link => {
     });
  
 });
+
+const slides = document.querySelectorAll(".slide");
+let current = 0;
+
+function showSlide(index) {
+    slides.forEach(slide => {
+        slide.style.opacity = "0";
+    });
+
+    slides[index].style.opacity = "1";
+}
+
+// mostra o primeiro
+showSlide(current);
+
+// troca automática
+setInterval(() => {
+    current++;
+
+    if (current >= slides.length) {
+        current = 0;
+    }
+
+    showSlide(current);
+}, 5000);
