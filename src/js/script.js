@@ -242,3 +242,65 @@ setInterval(() => {
 
     showSlide(current);
 }, 5000);
+
+
+// partículas
+const canvas = document.getElementById("bg");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let particles = [];
+
+for (let i = 0; i < 60; i++) {
+    particles.push({
+        x: Math.random()*canvas.width,
+        y: Math.random()*canvas.height,
+        vx: Math.random(),
+        vy: Math.random()
+    });
+}
+
+function animate() {
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+
+    particles.forEach(p => {
+        p.x += p.vx;
+        p.y += p.vy;
+
+        if(p.x > canvas.width) p.x = 0;
+        if(p.y > canvas.height) p.y = 0;
+
+        ctx.fillStyle = "#00f7ff";
+        ctx.fillRect(p.x,p.y,2,2);
+    });
+
+    requestAnimationFrame(animate);
+}
+animate();
+
+
+const form = document.getElementById("form");
+const resposta = document.getElementById("resposta");
+
+form.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let nome = document.getElementById("nome").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let msg = document.getElementById("msg").value.trim();
+
+    if(nome === "" || email === "" || msg === ""){
+        alert("Preencha todos os campos!");
+        return;
+    }
+
+    if(!email.includes("@")){
+        alert("Email inválido!");
+        return;
+    }
+
+    resposta.style.display = "block";
+    form.reset();
+});

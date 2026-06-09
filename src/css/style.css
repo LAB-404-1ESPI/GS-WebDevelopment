@@ -1095,3 +1095,79 @@ body {
     max-width: 600px;
     z-index: 1;
 }
+
+/* fundo */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* container */
+.form-container {
+    width: 350px;
+    margin: 10% auto;
+    padding: 30px;
+    background: rgba(0,0,0,0.7);
+    border: 1px solid #00f7ff;
+    box-shadow: 0 0 30px #00f7ff44;
+}
+
+/* inputs */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #00f7ff55;
+    color: #00f7ff;
+}
+
+label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    transition: 0.3s;
+    color: #00f7ff88;
+}
+
+input:focus + label,
+textarea:focus + label {
+    top: -10px;
+    font-size: 10px;
+}
+
+/* botão glitch */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #00f7ff;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+button:hover {
+    animation: glitch 0.3s infinite;
+}
+
+@keyframes glitch {
+    0% { transform: translate(0); }
+    25% { transform: translate(-2px,2px); }
+    50% { transform: translate(2px,-2px); }
+    75% { transform: translate(-1px,1px); }
+    100% { transform: translate(0); }
+}
+
+/* resposta IA */
+.resposta {
+    display: none;
+    margin-top: 20px;
+    color: #00ff9c;
+}
